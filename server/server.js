@@ -28,6 +28,8 @@ app.use(express.json());
 // ROUTES
 app.use("/api/auth", require("./routes/authRoutes"));
 
+app.use("/api/tasks", require("./routes/taskRoutes"));
+
 
 // SERVER
 const PORT = process.env.PORT || 5000;
