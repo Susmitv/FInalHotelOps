@@ -4,6 +4,8 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import ManagerDashboard from "./pages/ManagerDashboard";
 import EmployeeDashboard from "./pages/EmployeeDashboard";
+import EmployeeProfile from "./pages/EmployeeProfile";
+import ManagerReports from "./pages/ManagerReports";
 
 function App() {
   return (
@@ -23,6 +25,16 @@ function App() {
         <Route
           path="/employee"
           element={<EmployeeDashboard />}
+        />
+
+        <Route
+          path="/profile"
+          element={<EmployeeProfile />}
+        />
+
+        <Route
+          path="/reports"
+          element={<ManagerReports />}
         />
 
       </Routes>
